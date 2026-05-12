@@ -1,4 +1,4 @@
-//implements currying function
+
 
 export default function curry(func) {
   return function curried(...args) {
