@@ -1,0 +1,25 @@
+export default function classNames(...args) {
+    const result = [];
+
+  function process(value) {
+    if (!value && value !== 0) return;
+
+    if (typeof value === 'string' || typeof value === 'number') {
+      if (value) result.push(String(value));
+    } 
+    else if (Array.isArray(value)) {
+      value.forEach(process);
+    } 
+    else if (typeof value === 'object') {
+      for (let key in value) {
+        if (value[key]) {
+          result.push(key);
+        }
+      }
+    }
+  }
+
+  args.forEach(process);
+
+  return result.join(' ');
+}
