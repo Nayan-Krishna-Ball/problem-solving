@@ -14,7 +14,7 @@ const product = {
 
 for (let key in product) {
   //   console.log(`${key}: ${product[key]}`);
-  //   console.log(`Type of ${key}: ${typeof product[key]}`);
+
 
   if (typeof product[key] === "object") {
     for (let subkey in product[key]) {
