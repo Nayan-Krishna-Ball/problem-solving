@@ -1,3 +1,5 @@
+//factorial function
+
 function factorial(n) {
   let result = 1;
 
