@@ -24,3 +24,5 @@ export default function promiseAll(iterable) {
     });
   });
 }
+
+// output: [2, 4, 6, 8]
