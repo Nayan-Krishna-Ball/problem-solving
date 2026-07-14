@@ -1,4 +1,3 @@
-//
 
 export default function memoize(func) {
   let cache = {};

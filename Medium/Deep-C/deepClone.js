@@ -1,4 +1,3 @@
-//
 
   if (typeof value !== 'object' || value === null) {
     // Primitives can be returned directly because they are already immutable values.
