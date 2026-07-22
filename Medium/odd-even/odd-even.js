@@ -1,4 +1,3 @@
-//
 
 function checkEvenOdd(num) {
   if (num % 2 === 0) {
